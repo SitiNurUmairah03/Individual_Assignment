@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>MY FAVOURITE</title>
+  <link rel="stylesheet" href="assest/css/style.css">
+</head>
+<body>
+  <a name="Top_Page"> </a>
+
+<div class="topnav">
+  <a class="active" href="index.html"><img src="assest/image/homeicon.png" width="60px"></a>
+  <a href="about_me.html">ABOUT ME</a>
+  <a href="my_gallery.html">MY GALLERY</a>
+  <a href="my_experience.html">MY EXPERIENCE</a>
+  <a href="my_education.html">MY EDUCATION</a>
+  <a href="my_favourite.html">MY FAVOURITE</a>
+  <a href="https://www.instagram.com/umairah_yuseri/" target="_blank"> 
+   <img src="assest/image/igicon.png" width="50px"></a>
+  <a href="https://www.facebook.com/nur.umairah.79274" target="_blank"> 
+   <img src="assest/image/fbicon.png" width="50px"></a>
+</div>
+
+<br><br>
+
+<hr size="3" color="#702963">
+  <marquee direction="right" scrollamount="12"> 
+    <center> <h1> <font color= "black" size="20" face="Forte">MY FAVOURITE YOUTUBER</font> </h1></center>
+  </marquee>
+<hr size="3" color="#702963">
+
+<br><br>
+  <iframe width="280" height="215" align="left" src="https://www.youtube.com/embed/9RCakWYiFtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <iframe width="280" height="215" align="left" src="https://www.youtube.com/embed/ne9OiZOnzXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <iframe width="280" height="215" align="right" src="https://www.youtube.com/embed/lpx-xWqKnjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <iframe width="280" height="215" align="right" src="https://www.youtube.com/embed/i6p56oMorKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br><br><br><br>
+
+<br><br><br><br><br>
+<marquee class="blink" marquee direction="right" scrollamount="12"> 
+    <center> <h1> <font color= "black" size="20" face="Forte">MY FAVOURITE ACTORS</font> </h1></center>
+</marquee>
+
+<br><br>
+<div class="slideshow-container">
+
+<center>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 11</div>
+  <img src="assest/image/foto2.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 11</div>
+  <img src="assest/image/foto3.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 11</div>
+  <img src="assest/image/foto4.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 11</div>
+  <img src="assest/image/foto5.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 11</div>
+  <img src="assest/image/foto6.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 11</div>
+  <img src="assest/image/foto7.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 11</div>
+  <img src="assest/image/foto8.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 11</div>
+  <img src="assest/image/foto9.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 11</div>
+  <img src="assest/image/foto10.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 11</div>
+  <img src="assest/image/foto11.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 11</div>
+  <img src="assest/image/foto12.jpg" style="width:50%">
+</div>
+
+</center>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><br><br>
+
+<hr size="3" color="#702963">
+   <center> <h1>MY FAVOURITE K-GROUP</h1> </center>
+   <hr size="3" color="#702963">
+
+<br><br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="assest/image/foto13.jpg" style="width:100%">
+  </div><div class="column">
+    <img src="assest/image/foto14.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="assest/image/foto15.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="assest/image/foto16.jpg"  style="width:100%">
+  </div>
+</div>
+
+<br><br><br>
+<hr size="3" color="#702963">
+   <center> <h1>MY FAVOURITE SONGS</h1> </center>
+   <hr size="3" color="#702963">
+
+<br>
+<center>
+  <font color= "black" size="5"face="Forte">We Are Bulletproof:Eternal</font>
+</center>
+<center>
+<audio controls>
+  <source src="assest/audio/lagu.mp3" type="audio/mp3">
+</audio>
+</center>
+<br><br>
+
+<br>
+<center>
+  <font color= "black" size="5"face="Forte">Mago</font>
+</center>
+<center>
+<audio controls>
+  <source src="assest/audio/lagu2.mp3" type="audio/mp3">
+</audio>
+</center>
+<br><br>
+
+<br>
+<center>
+  <font color= "black" size="5"face="Forte">Tak Segampang Itu</font>
+</center>
+<center>
+<audio controls>
+  <source src="assest/audio/lagu3.mp3" type="audio/mp3">
+</audio>
+</center>
+<br><br>
+
+<br>
+<center>
+  <font color= "black" size="5"face="Forte">Asalkan Kau Bahagia</font>
+</center>
+<center>
+<audio controls>
+  <source src="assest/audio/lagu4.mp3" type="audio/mp3">
+</audio>
+</center>
+<br><br>
+
+<br>
+<center>
+  <font color= "black" size="5"face="Forte">Selfless</font>
+</center>
+<center>
+<audio controls>
+  <source src="assest/audio/lagu5.mp3" type="audio/mp3">
+</audio>
+</center>
+<br><br>
+
+<br>
+<center>
+  <font color= "black" size="5"face="Forte">Come Closer</font>
+</center>
+<center>
+<audio controls>
+  <source src="assest/audio/lagu6.mp3" type="audio/mp3">
+</audio>
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+<a href="#Top_Page">
+  <img src="assest/image/arrowicon.png" width="50px" align="right">
+</a>
+
+<br><br><br>
+
+<footer>
+  <p>Copyright @ snuby2023</p>
+</footer>
+
+
+
+
+</body>
+</html>
